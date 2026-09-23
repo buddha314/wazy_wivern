@@ -8,5 +8,4 @@ func _ready() -> void:
 		get_viewport().use_xr = true
 		fallback_camera.current = false
 	else:
-		get_viewport().use_xr = false
 		fallback_camera.current = true
