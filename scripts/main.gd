@@ -1,7 +1,8 @@
 extends Node3D
 
-func _enter_tree() -> void:
-	var fallback_camera: Camera3D = $FallbackCamera
+@onready var fallback_camera: Camera3D = $FallbackCamera
+
+func _ready() -> void:
 	var xr_interface := XRServer.find_interface("OpenXR")
 	if xr_interface and xr_interface.initialize():
 		fallback_camera.current = false
