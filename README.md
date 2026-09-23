@@ -21,5 +21,5 @@ Minimum supported version is **Godot 4.2** (the scaffold declares the `4.2` feat
 
 - Renderer is set to `mobile` in `project.godot`.
 - Use the Android export preset as the starting point for signing and deployment settings.
-- Set `export_path` in `export_presets.cfg` (or in the editor export UI) before exporting.
+- Default Android export path is `build/android/wazy_wivern.apk` (adjust as needed).
 - Keep signing credentials and any encryption keys out of version control.
