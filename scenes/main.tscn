@@ -7,7 +7,7 @@ script = ExtResource("1_x1r")
 
 [node name="FallbackCamera" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 3)
-current = true
+current = false
 
 [node name="XROrigin3D" type="XROrigin3D" parent="."]
 
