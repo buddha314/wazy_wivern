@@ -10,6 +10,8 @@ Minimal Godot XR project configured for the **Mobile** rendering toolchain.
 
 ## Running
 
+Use **Godot 4.2+** (the project scaffold currently declares the `4.2` feature tag).
+
 1. Open the project in Godot 4.x.
 2. Run the main scene (`res://scenes/main.tscn`).
 3. On XR-capable hardware with OpenXR support, the project enables XR at startup.
@@ -19,3 +21,4 @@ Minimal Godot XR project configured for the **Mobile** rendering toolchain.
 
 - Renderer is set to `mobile` in `project.godot`.
 - Use the Android export preset as the starting point for signing and deployment settings.
+- Set `export_path` in `export_presets.cfg` (or in the editor export UI) before exporting.
