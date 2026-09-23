@@ -5,9 +5,9 @@ extends Node3D
 func _ready() -> void:
 	var xr_interface := XRServer.find_interface("OpenXR")
 	if xr_interface and xr_interface.initialize():
-		get_viewport().use_xr = true
-		fallback_camera.current = false
 		fallback_camera.visible = false
+		fallback_camera.current = false
+		get_viewport().use_xr = true
 	else:
 		fallback_camera.visible = true
 		fallback_camera.current = true
